@@ -1,3 +1,4 @@
+import 'package:farmsoko/utilities/constantscolors.dart';
 import 'package:farmsoko/widgets/navdrawer.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,8 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(child: Scaffold(
       drawer: NavDrawer(),
       appBar: AppBar(
+elevation: 0,
+backgroundColor: ConstantsColors().mainColor(),
 
       ),
     ));

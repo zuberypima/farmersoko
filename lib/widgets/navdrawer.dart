@@ -26,7 +26,7 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.home),
-            title: Text('Welcome'),
+            title: Text('Nyumbani'),
             onTap: () => {},
           ),
           ListTile(
@@ -36,12 +36,17 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.settings),
-            title: Text('Settings'),
+            title: Text('Mazao Yangu'),
             onTap: () => {Navigator.of(context).pop()},
           ),
           ListTile(
             leading: Icon(Icons.border_color),
-            title: Text('Feedback'),
+            title: Text('Oder Zangu'),
+            onTap: () => {Navigator.of(context).pop()},
+          ),
+           ListTile(
+            leading: Icon(Icons.location_on),
+            title: Text('Makazi'),
             onTap: () => {Navigator.of(context).pop()},
           ),
           ListTile(
