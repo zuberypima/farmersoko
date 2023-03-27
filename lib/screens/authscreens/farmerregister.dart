@@ -167,24 +167,27 @@ class FarmerRegPage extends StatelessWidget {
               ),
             ),
 
-             Center(
-              child: Container(
-            width: 130,
-            height: 40,
-            decoration: BoxDecoration(
-                color: Colors.cyan,
-                border: Border.all(color: Colors.grey, width: 2),
-                borderRadius: BorderRadius.circular(10)),
-            child: Center(
-              child: Text(
-                'Sajili',
-                style: TextStyle(
-                    fontSize: ConstantsColors().textSizeOne,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w700),
-              ),
-            ),
-          )),
+             Padding(
+               padding: const EdgeInsets.fromLTRB(10, 30, 0, 0),
+               child: Center(
+                child: Container(
+                         width: 130,
+                         height: 40,
+                         decoration: BoxDecoration(
+                  color: Colors.cyan,
+                  border: Border.all(color: Colors.grey, width: 2),
+                  borderRadius: BorderRadius.circular(10)),
+                         child: Center(
+                child: Text(
+                  'Sajili',
+                  style: TextStyle(
+                      fontSize: ConstantsColors().textSizeOne,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w700),
+                ),
+                         ),
+                       )),
+             ),
           ],
         ),
       ),
