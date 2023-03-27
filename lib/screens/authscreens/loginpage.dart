@@ -1,6 +1,6 @@
 
 import 'package:farmsoko/screens/authscreens/accounttypepage.dart';
-import 'package:farmsoko/screens/authscreens/registrationpage.dart';
+import 'package:farmsoko/screens/authscreens/farmerregister.dart';
 import 'package:farmsoko/screens/homepage.dart';
 import 'package:farmsoko/utilities/constantscolors.dart';
 import 'package:farmsoko/widgets/formfildone.dart';

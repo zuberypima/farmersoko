@@ -1,5 +1,5 @@
 // ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors
-import 'package:farmsoko/screens/authscreens/registrationpage.dart';
+import 'package:farmsoko/screens/authscreens/farmerregister.dart';
 import 'package:farmsoko/utilities/constantscolors.dart';
 import 'package:flutter/material.dart';
 
