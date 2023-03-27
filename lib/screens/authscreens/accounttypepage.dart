@@ -9,20 +9,54 @@ class SelectAccountType extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(50, 10, 50, 5),
+            padding: const EdgeInsets.all(8.0),
             child: Container(
-              height: 35,
-              decoration: BoxDecoration(color: ConstantsColors().mainColor()),
-              child: Center(child: Text('Mkulima')),
+              height: 150,
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(border: Border.all()),
+              child: Column(
+                children: [],
+              ),
             ),
           ),
-          Container(
-            height: 35,
-            child: Center(child: Text('Mfanyabiashara')),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(50, 10, 50, 5),
+            child: Container(
+              height: 40,
+              decoration: BoxDecoration(
+                  color: ConstantsColors().mainColor(),
+                  border: Border.all(color: Colors.grey, width: 3),
+                  borderRadius: BorderRadius.circular(10)),
+              child: Center(
+                  child: Text(
+                'Mkulima',
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                    color: Colors.white),
+              )),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(50, 10, 50, 5),
+            child: Container(
+              height: 40,
+              decoration: BoxDecoration(
+                  color: Colors.cyan,
+                  border: Border.all(color: Colors.grey, width: 3),
+                  borderRadius: BorderRadius.circular(10)),
+              child: Center(
+                  child: Text(
+                'Mfanyabiashara',
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                    color: Colors.white),
+              )),
+            ),
           ),
         ],
       ),
