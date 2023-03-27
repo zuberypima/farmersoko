@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class FarmerRegisterApp extends StatelessWidget {
-  const FarmerRegisterApp({super.key});
+class BuyerRegPage extends StatelessWidget {
+  const BuyerRegPage({super.key});
 
   @override
   Widget build(BuildContext context) {

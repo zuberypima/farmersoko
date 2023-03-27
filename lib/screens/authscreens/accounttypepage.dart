@@ -47,7 +47,7 @@ class SelectAccountType extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(50, 10, 50, 5),
             child: InkWell(
               onTap: () {
-                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>RegistrationPage()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>FarmerRegPage()));
               },
               child: Container(
                 height: 40,
