@@ -1,4 +1,5 @@
 
+import 'package:farmsoko/screens/authscreens/accounttypepage.dart';
 import 'package:farmsoko/screens/authscreens/registrationpage.dart';
 import 'package:farmsoko/screens/homepage.dart';
 import 'package:farmsoko/utilities/constantscolors.dart';
@@ -74,7 +75,7 @@ class LoginPage extends StatelessWidget {
                 const Text("Hapana bado sijajisajili  !"),
                 TextButton(
                     onPressed: (() {
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context)=>RegistrationPage()));
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SelectAccountType()));
                     }),
                     child: const Text(
                       'Jisajili',

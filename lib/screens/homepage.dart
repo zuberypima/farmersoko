@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         children: [
           Padding(
-              padding: const EdgeInsets.fromLTRB(10, 30, 10, 0),
+              padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
               child: Container(
                 height: 160,
                 decoration: BoxDecoration(
@@ -68,9 +68,34 @@ class _HomePageState extends State<HomePage> {
                       ))
                 ]),
               )),
-              
+              Container()
         ],
       ),
-    ));
+      bottomNavigationBar: BottomNavigationBar(
+        elevation: 5,
+        // ignore: prefer_const_literals_to_create_immutables
+        items: [
+       BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.business),
+            label: 'Business',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.school),
+            label: 'School',
+          ),
+      ],),
+
+      // add button
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: ConstantsColors().mainColor(),
+        
+        onPressed: (){},child: Icon(Icons.add),),
+    ),
+  
+    );
   }
 }
