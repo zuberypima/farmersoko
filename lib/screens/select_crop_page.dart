@@ -22,30 +22,24 @@ class _CropTypePageState extends State<CropTypePage> {
         children: [
           Container(
             height: 100,
-            
             decoration: BoxDecoration(
-                border: Border.all(width: 3, color: Colors.grey,),
-                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30))
-                
-                
+                border: Border.all(
+                  width: 3,
+                  color: Colors.grey,
                 ),
+                borderRadius:
+                    BorderRadius.only(bottomLeft: Radius.circular(30))),
             child: Text(
               'Tafadhali chagua Mazao unayojihusishanayo',
               style: TextStyle(fontSize: 16),
             ),
           ),
           Container(
-            height: MediaQuery.of(context).size.height,
-            child: GridView(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-              ),
-              itemCount: 2,
-              itemBuilder: (BuildContext context, int index) {
-                return Stack(children: [Text('data')],);
-              },
-            ),
-          )
+              height: MediaQuery.of(context).size.height,
+              child: GridView(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2),
+                      children: [Text('data'),Text('data')],))
         ],
       ),
     );
