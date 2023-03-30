@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_unnecessary_containers, sized_box_for_whitespace
 
 import 'package:farmsoko/utilities/constantscolors.dart';
+import 'package:farmsoko/widgets/cropcard.dart';
 import 'package:flutter/material.dart';
 
 class SelecteCropPage extends StatefulWidget {
@@ -35,24 +36,27 @@ class _SelecteCropPageState extends State<SelecteCropPage> {
             ),
           ),
           Container(
-              height: MediaQuery.of(context).size.height,
-              
-              child: GridView(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2),
-                children: [
-                  Container(
-                    height: 100,
-                    decoration: BoxDecoration(),
-                    child: Stack(
-                      
+            height: MediaQuery.of(context).size.height,
+            child: GridView.count(
+              crossAxisSpacing: 1,
+              mainAxisSpacing: 7,
+              crossAxisCount: 2,
+              children: <Widget>[
+                Card(
+                
+                  child: SizedBox(
+                    height: 30,
+                    child: Column(
                       children: [
-                      CircleAvatar(),
-                      Text('Mahindi')
-                    ],),
-                  )
-                   ],
-              ))
+                        Container(),
+                        Container(),
+                        ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
