@@ -3,14 +3,14 @@
 import 'package:farmsoko/utilities/constantscolors.dart';
 import 'package:flutter/material.dart';
 
-class CropTypePage extends StatefulWidget {
-  const CropTypePage({super.key});
+class SelecteCropPage extends StatefulWidget {
+  const SelecteCropPage({super.key});
 
   @override
-  State<CropTypePage> createState() => _CropTypePageState();
+  State<SelecteCropPage> createState() => _SelecteCropPageState();
 }
 
-class _CropTypePageState extends State<CropTypePage> {
+class _SelecteCropPageState extends State<SelecteCropPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,10 +36,23 @@ class _CropTypePageState extends State<CropTypePage> {
           ),
           Container(
               height: MediaQuery.of(context).size.height,
+              
               child: GridView(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2),
-                      children: [Text('data'),Text('data')],))
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2),
+                children: [
+                  Container(
+                    height: 100,
+                    decoration: BoxDecoration(),
+                    child: Stack(
+                      
+                      children: [
+                      CircleAvatar(),
+                      Text('Mahindi')
+                    ],),
+                  )
+                   ],
+              ))
         ],
       ),
     );

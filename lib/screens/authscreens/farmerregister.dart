@@ -206,7 +206,7 @@ class FarmerRegPage extends StatelessWidget {
               child: Center(
                   child: InkWell(
                 onTap: () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CropTypePage()));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SelecteCropPage()));
                 },
                 child: Container(
                   width: 130,

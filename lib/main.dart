@@ -1,4 +1,5 @@
 import 'package:farmsoko/screens/authscreens/loginpage.dart';
+import 'package:farmsoko/screens/select_crop_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     // ignore: prefer_const_constructors
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage()
+      home:SelecteCropPage()
     );
   }
 }
