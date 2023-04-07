@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                     iconLable: 'Mikopo',
                   ),
                   GridIconOne(
-                    iconData: Icons.shopping_cart,
+                    iconData: Icons.people,
                     iconLable: 'Jamii',
                   ),
                 ],
