@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:farmsoko/utilities/constantscolors.dart';
+import 'package:farmsoko/widgets/homegridIcon.dart';
 import 'package:farmsoko/widgets/navdrawer.dart';
 import 'package:flutter/material.dart';
 
@@ -74,84 +75,24 @@ class _HomePageState extends State<HomePage> {
               child: GridView.count(
                 crossAxisSpacing: 1,
                 mainAxisSpacing: 2,
-                crossAxisCount: 3,
+                crossAxisCount: 2,
                 children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      width: 45,
-                      decoration: BoxDecoration(
-                          border: Border.all(width: 3, color: Colors.grey),
-                          borderRadius: BorderRadius.circular(20)),
-                      child: Center(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [Icon(Icons.home,size: 65,), Text('Soko',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700))],
-                        ),
-                      ),
-                    ),
+                  GridIconOne(
+                    iconData: Icons.shopping_cart,
+                    iconLable: 'Sokoni',
                   ),
-                   Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      width: 45,
-                      decoration: BoxDecoration(
-                          border: Border.all(width: 3, color: Colors.grey),
-                          borderRadius: BorderRadius.circular(20)),
-                      child: Center(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [Icon(Icons.home,size: 65,), Text('Soko',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700))],
-                        ),
-                      ),
-                    ),
+                  GridIconOne(
+                    iconData: Icons.info_outline_rounded,
+                    iconLable: 'Taarifa',
                   ),
-                   Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      width: 45,
-                      decoration: BoxDecoration(
-                          border: Border.all(width: 3, color: Colors.grey),
-                          borderRadius: BorderRadius.circular(20)),
-                      child: Center(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [Icon(Icons.home,size: 65,), Text('Soko',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700))],
-                        ),
-                      ),
-                    ),
+                  GridIconOne(
+                    iconData: Icons.shopping_cart,
+                    iconLable: 'Mikopo',
                   ),
-                   Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      width: 45,
-                      decoration: BoxDecoration(
-                          border: Border.all(width: 3, color: Colors.grey),
-                          borderRadius: BorderRadius.circular(20)),
-                      child: Center(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [Icon(Icons.home,size: 65,), Text('Soko',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700))],
-                        ),
-                      ),
-                    ),
+                  GridIconOne(
+                    iconData: Icons.shopping_cart,
+                    iconLable: 'Jamii',
                   ),
-                   Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      width: 45,
-                      decoration: BoxDecoration(
-                          border: Border.all(width: 3, color: Colors.grey),
-                          borderRadius: BorderRadius.circular(20)),
-                      child: Center(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [Icon(Icons.home,size: 65,), Text('Soko',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700))],
-                        ),
-                      ),
-                    ),
-                  ),
-                   
                 ],
               ),
             )
