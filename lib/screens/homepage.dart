@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:farmsoko/screens/marketpage.dart';
 import 'package:farmsoko/utilities/constantscolors.dart';
 import 'package:farmsoko/widgets/homegridIcon.dart';
 import 'package:farmsoko/widgets/navdrawer.dart';
@@ -77,9 +78,14 @@ class _HomePageState extends State<HomePage> {
                 mainAxisSpacing: 2,
                 crossAxisCount: 2,
                 children: <Widget>[
-                  GridIconOne(
-                    iconData: Icons.shopping_cart,
-                    iconLable: 'Sokoni',
+                  InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context)=>MarketPage()));
+                    },
+                    child: GridIconOne(
+                      iconData: Icons.shopping_cart,
+                      iconLable: 'Sokoni',
+                    ),
                   ),
                   GridIconOne(
                     iconData: Icons.info_outline_rounded,
