@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_unnecessary_containers, sized_box_for_whitespace
+// ignore_for_file: avoid_unnecessary_containers, sized_box_for_whitespace, prefer_const_constructors
 
 import 'package:farmsoko/utilities/constantscolors.dart';
 import 'package:farmsoko/widgets/cropcard.dart';
@@ -19,7 +19,7 @@ class _SelecteCropPageState extends State<SelecteCropPage> {
         appBar: AppBar(
             elevation: 0,
             backgroundColor: ConstantsColors().mainColor(),
-            title: Text('Chagua Mazao')),
+            title: const Text('Chagua Mazao')),
         body: ListView(
           children: [
             Container(
@@ -29,13 +29,17 @@ class _SelecteCropPageState extends State<SelecteCropPage> {
                     // width: 3,
                     color: Colors.grey,
                   ),
+                  // ignore: prefer_const_constructors
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(30),
                     bottomRight: Radius.circular(30),
                   )),
+              // ignore: prefer_const_constructors
               child: Center(
+                // ignore: prefer_const_constructors
                 child: Text(
                   'Tafadhali chagua Mazao unayojihusishanayo',
+                  // ignore: prefer_const_constructors
                   style: TextStyle(fontSize: 16),
                 ),
               ),
@@ -52,6 +56,7 @@ class _SelecteCropPageState extends State<SelecteCropPage> {
                   childAspectRatio: 1.5,
                   children: <Widget>[
                     Card(
+                      // ignore: prefer_const_constructors
                       color: Color.fromARGB(174, 255, 214, 64),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

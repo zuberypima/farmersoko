@@ -114,11 +114,11 @@ class _HomePageState extends State<HomePage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.business),
-              label: 'Business',
+              label: 'Sokoni',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.school),
-              label: 'School',
+              label: 'Profile',
             ),
           ],
         ),

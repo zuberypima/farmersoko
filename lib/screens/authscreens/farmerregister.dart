@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:farmsoko/screens/authscreens/autfunctions.dart';
 import 'package:farmsoko/screens/select_crop_page.dart';
 import 'package:farmsoko/utilities/constantscolors.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class FarmerRegPage extends StatelessWidget {
   const FarmerRegPage({Key? key}) : super(key: key);
@@ -101,7 +103,7 @@ class FarmerRegPage extends StatelessWidget {
                             borderSide: BorderSide(width: 2)),
                         focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(width: 2)),
-                        hintText: 'Emaail',
+                        hintText: 'Email',
                       ),
                     ),
                   ),
@@ -158,12 +160,15 @@ class FarmerRegPage extends StatelessWidget {
                     height: 45,
                     color: Colors.white,
                     child: TextFormField(
+                      onChanged: (value) {
+                        
+                      },
                       decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(width: 2)),
                         focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(width: 2)),
-                        hintText: 'Emaail',
+                        hintText: 'Email',
                       ),
                     ),
                   ),
@@ -208,20 +213,26 @@ class FarmerRegPage extends StatelessWidget {
                 onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SelecteCropPage()));
                 },
-                child: Container(
-                  width: 130,
-                  height: 40,
-                  decoration: BoxDecoration(
-                      color: Colors.cyan,
-                      border: Border.all(color: Colors.grey, width: 2),
-                      borderRadius: BorderRadius.circular(10)),
-                  child: Center(
-                    child: Text(
-                      'Sajili',
-                      style: TextStyle(
-                          fontSize: ConstantsColors().textSizeOne,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w700),
+                child: InkWell(
+                  onTap: () {
+                    AuthFunction().signUp('', '');
+                  },
+                  
+                  child: Container(
+                    width: 130,
+                    height: 40,
+                    decoration: BoxDecoration(
+                        color: Colors.cyan,
+                        border: Border.all(color: Colors.grey, width: 2),
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Center(
+                      child: Text(
+                        'Sajili',
+                        style: TextStyle(
+                            fontSize: ConstantsColors().textSizeOne,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w700),
+                      ),
                     ),
                   ),
                 ),

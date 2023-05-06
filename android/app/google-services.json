@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "197263860869",
+    "project_id": "farmsoko-42676",
+    "storage_bucket": "farmsoko-42676.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197263860869:android:16bfdfe11f65ad4f0075ec",
+        "android_client_info": {
+          "package_name": "com.example.farmsoko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197263860869-f5v90j4rjnq4e088pok0eo5g87qqvj5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVQPpgWdSO5JP-UvbHO19teMHLlutzyHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197263860869-f5v90j4rjnq4e088pok0eo5g87qqvj5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
